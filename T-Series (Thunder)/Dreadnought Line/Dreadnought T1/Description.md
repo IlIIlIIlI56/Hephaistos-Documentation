@@ -43,3 +43,7 @@ Gaming & Overall Performance:
   ``Works Smoothly at 1080p: 100+ FPS in most configurations``
 -  The Last of Us Part I<br>
   ``1080p Medium-High + FSR 3.1 Quality (RT Off): 60 FPS``
+
+Built-In LoRaWAN Communication:
+
+> The T-Series models offer integrated, fast and private WiFi-Through-Radio comunication, enabling the user to create encripted connections with similar devices using the LoRaWAN protocol up to distances of 2Km (with a direct line of sight).
