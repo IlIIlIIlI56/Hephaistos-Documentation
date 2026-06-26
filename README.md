@@ -1,5 +1,4 @@
-# Hephaistos-Documentation
-Current/Planned model lines are:<br>
+# Current/Planned model lines are:
 <---- Current ----><br>
 T-Series  (Thunder)<br>
 <---- Planned ----><br>
