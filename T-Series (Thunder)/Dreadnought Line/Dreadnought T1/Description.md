@@ -10,10 +10,14 @@ Processor, Graphics & Shared Memory (APU):
 - 16GB GDDR6 V/RAM Bus:256bit/Bandwidth:448 GB/s
 ```
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
-    <td align="center"><img src="Media/Figure 1.png" alt="Figure 1"/></td>
-    <td align="center"><img src="Media/Figure 2.png" alt="Figure 2"/></td>
+    <td width="50%" align="center">
+      <img src="Media/AMD BC 250 (Main Board) Prototype.jpg" alt="Figure 1" width="100%"/>
+    </td>
+    <td width="50%" align="center">
+      <img src="Media/Cyberdeck Overview.jpg" alt="Figure 2" width="100%"/>
+    </td>
   </tr>
 </table>
 
