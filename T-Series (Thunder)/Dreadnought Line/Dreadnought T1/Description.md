@@ -9,7 +9,7 @@
 ---
 Processor, Graphics & Shared Memory (APU):
 
-> Semi-custom AMD APU derived from PlayStation 5 silicon, combining a Zen 2 CPU cluster with an RDNA 2 GPU on a shared GDDR6 memory pool — delivering console-grade compute in an embedded, fanless-capable form factor.
+> Semi-custom AMD APU derived from PlayStation 5 silicon, combining a Zen 2 CPU cluster with an RDNA 2 GPU on a shared GDDR6 memory pool — delivering console-grade performance in an embedded, graphics card form factor, perfect for extra customization.
 
 ```text
 - AMD Oberon 6 cores [Zen2] / 12 threads 3.5GHz
@@ -19,7 +19,7 @@ Processor, Graphics & Shared Memory (APU):
 
 Internal Electrical Routing Scheme:
 
-> Maps all internal power and data paths between components. The left column represents combined power+data connections (USB, DisplayPort, Ethernet); the right column shows dedicated power rails distributed through Molex-to-SATA tap adapters.
+> Basic map of internal power and data paths between components. The left column represents combined power+data connections (USB, DisplayPort, Ethernet); the right column shows dedicated power distributed through USB, SATA-to-Molex and Molex-to-USB adapters.
 
 ```text
 [Power + Data]          [Device/Conector]         [Pure Power]
