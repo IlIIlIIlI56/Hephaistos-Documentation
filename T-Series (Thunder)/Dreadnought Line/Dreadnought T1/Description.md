@@ -1,10 +1,3 @@
-<table align="center">
-  <tr>
-    <td align="center"><img src="Media/Figure 1.png" alt="Figure 1"/></td>
-    <td align="center"><img src="Media/Figure 2.png" alt="Figure 2"/></td>
-  </tr>
-</table>
-
 ### Technical Specifications<br>& General Information:
 ---
 Processor, Graphics & Shared Memory (APU):
@@ -16,6 +9,13 @@ Processor, Graphics & Shared Memory (APU):
 - AMD Cyan Skillfish 36 CU's RDNA2 1.5GHz
 - 16GB GDDR6 V/RAM Bus:256bit/Bandwidth:448 GB/s
 ```
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="Media/Figure 1.png" alt="Figure 1"/></td>
+    <td align="center"><img src="Media/Figure 2.png" alt="Figure 2"/></td>
+  </tr>
+</table>
 
 Internal Electrical Routing Scheme:
 
