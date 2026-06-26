@@ -12,10 +12,10 @@ Processor, Graphics & Shared Memory (APU):
 
 <table align="center" width="100%">
   <tr>
-    <td width="50%" align="center">
+    <td width="60.5%" align="left">
       <img src="Media/AMD BC 250 (Main Board) Prototype.jpg" alt="Figure 1" width="100%"/>
     </td>
-    <td width="50%" align="center">
+    <td width="39.5%" align="left">
       <img src="Media/Cyberdeck Overview.jpg" alt="Figure 2" width="100%"/>
     </td>
   </tr>
