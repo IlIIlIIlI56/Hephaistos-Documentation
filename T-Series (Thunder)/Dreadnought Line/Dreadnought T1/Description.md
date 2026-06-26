@@ -1,5 +1,6 @@
 <td align="center" width="100%">
-  <img src="Media/Electrichal Scheme.png" alt="Electrical Conection Scheme"/>
+  <img src="Media/Figure 1.png" alt="Figure 1"/>
+  <img src="Media/Figure 2.png" alt="Figure 2"/>
 </td>
 
 ### Technical Specifications<br>& General Information:
