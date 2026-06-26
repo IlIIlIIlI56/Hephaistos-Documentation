@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="./assets/images/SEU_MODELO_FRONTAL.jpg" alt="Visão Frontal do Dispositivo" style="max-width:100%; border-radius: 8px; border: 1px solid #ddd;"/>
+      <img src="Media/Electrichal Scheme.png" alt="Visão Frontal do Dispositivo" style="max-width:100%; border-radius: 8px; border: 1px solid #ddd;"/>
       <br/>
       <sub><b>Fig 1: Visão Frontal / Case Externo</b></sub>
     </td>
