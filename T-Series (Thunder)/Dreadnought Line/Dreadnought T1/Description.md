@@ -33,3 +33,11 @@ Ethernet ->             RJ-45 Extensor Port                  |
 USB 3 ->                2.5" SATA SSD                 <- USB 2
 USB 3 ->                USB Hub        <- USB <- Molex <- SATA
 ```
+
+Gaming & Overall Performance:
+
+> The BC-250 delivers solid performance, suitable for LLM's up to 10GB/12GB in size depending on configuration and, in gaming, excelling at 1080p, comparable to an RX 6600 or GTX 1660 Ti, with basic Ray Tracing capabilities and even FSR Frame Generation.
+-  Cyberpunk
+-  Red Dead Redemption 2
+-  CS2 (Counter-Strike 2)
+-  Control
