@@ -39,7 +39,7 @@ Gaming & Overall Performance:
 > The BC-250 delivers solid performance, suitable for LLM's up to 10GB/12GB in size depending on configuration and, in gaming, excelling at 1080p, comparable to an RX 6600 or GTX 1660 Ti, with basic Ray Tracing capabilities and even FSR Frame Generation.
 -  Cyberpunk 2077<br>
   ``1080p High + FSR 3.1 Quality + RT (lighting only): 60-70 FPS``
--  CS2 (Counter-Strike 2)
+-  Counter-Strike 2<br>
   ``Works Smoothly at 1080p: 100+ FPS in most confisgurations``
--  The Last of Us Part I
+-  The Last of Us Part I<br>
   ``1080p Medium-High + FSR 3.1 Quality (RT Off): 60 FPS``
