@@ -40,6 +40,6 @@ Gaming & Overall Performance:
 -  Cyberpunk 2077<br>
   ``1080p High + FSR 3.1 Quality + RT (lighting only): 60-70 FPS``
 -  Counter-Strike 2<br>
-  ``Works Smoothly at 1080p: 100+ FPS in most confisgurations``
+  ``Works Smoothly at 1080p: 100+ FPS in most configurations``
 -  The Last of Us Part I<br>
   ``1080p Medium-High + FSR 3.1 Quality (RT Off): 60 FPS``
