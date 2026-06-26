@@ -36,7 +36,7 @@ USB 3 ->                USB Hub        <- USB <- Molex <- SATA
 
 Gaming & Overall Performance:
 
-> The BC-250 delivers solid performance, suitable for LLM's up to 10GB/12GB in size depending on configuration and, in gaming, playing at 1080p, comparable to an RX 6600 or GTX 1660 Ti, with basic Ray Tracing capabilities and even FSR Frame Generation.
+> The BC-250 delivers solid performance, suitable for LLMs up to 10GB/12GB in size depending on configuration and, in gaming, playing at 1080p, comparable to an RX 6600 or GTX 1660 Ti, with basic Ray Tracing capabilities and even FSR Frame Generation.
 -  Cyberpunk 2077<br>
   ``1080p High + FSR 3.1 Quality + RT (lighting only): 60-70 FPS``
 -  Counter-Strike 2<br>
