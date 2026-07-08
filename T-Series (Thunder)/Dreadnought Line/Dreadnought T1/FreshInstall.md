@@ -7,9 +7,9 @@ This guide documents the full bring-up process for the **Dreadnought T1**, it co
 - Governor:  PS5GPU-BC250 (Oberon-based GPU Graphics App)
 ```
 ---
-### 1. BIOS Flashing — Method 1 (USB / EFI Shell):
+### 1. BIOS Flashing (USB / EFI Shell):
 ---
-> Flashing `BC250_3.00_CHIPSETMENU.ROM` is what unlocks **dynamic VRAM allocation** and the hidden **chipset menu** on the BC-250. This is the community-standard modded BIOS — stable, tested, and sufficient for everything the Dreadnought T1 needs. The full source guide is available at [elektricm.github.io/amd-bc250-docs/bios/flashing](https://elektricm.github.io/amd-bc250-docs/bios/flashing/).
+> Flashing `BC250_3.00_CHIPSETMENU.ROM` is what unlocks **dynamic VRAM allocation** and the hidden **chipset menu** on the BC-250. This is the community-standard modded BIOS, mainly for being stable, tested, and sufficient for everything the AMD BC-250 needs. The full source guide is available at [elektricm.github.io/amd-bc250-docs/bios/flashing](https://elektricm.github.io/amd-bc250-docs/bios/flashing/).
 ```text
 - USB Stick:  FAT32 formatted, 32GB or smaller recommended (Use Rufus to format bigger drives)
 - SHA256:     48fbe5d366e6a56e2fdffdca848426216ba1f083610dab63db89d2f4e6c940b5
@@ -24,7 +24,7 @@ This guide documents the full bring-up process for the **Dreadnought T1**, it co
 1. Format the stick to FAT32.
 2. Extract the contents of `BIOS EFI` (from the zip) to the **root** of the stick.
 3. Back up the stock `Robin5.00` file somewhere safe.
-4. Copy `BC250_3.00_CHIPSETMENU.ROM` to the root of the stick and **rename it to `Robin5.00`** (no extension) — or edit `Flash.nsh` to match your filename instead.
+4. Copy `BC250_3.00_CHIPSETMENU.ROM` to the root of the stick and **rename it to `Robin5.00`** (no extension) — or edit `Flash.nsh` to match `BC250_3.00_CHIPSETMENU.ROM` instead.
 **Step 3 — Boot to the EFI Shell**
 1. Unplug all drives/SSDs from the board so it has no OS to boot into.
 2. Insert the USB stick and power on — the board should drop directly into the yellow-on-black EFI Shell.
@@ -33,17 +33,21 @@ This guide documents the full bring-up process for the **Dreadnought T1**, it co
 Shell> blk0:
 Shell> Flash.nsh
 ```
-> Add a space after the colon on `blk0:`. Once the AMI Firmware Update Utility starts, **do not touch the keyboard or power off the board** — even if it appears to hang, wait at least 15 minutes before assuming failure.
+> Warning, the USB stick may not be always on `blk0:`, take a quick look ath the "Device Mapping Table", sometimes it can be identified on `fs1:`. Once the AMI Firmware Update Utility starts, **do not touch the keyboard or power off the board** — even if it appears to hang, wait at least 15 minutes before assuming failure.
  
 **Step 5 — Power down & remove USB**
-Power off the board the moment the flash finishes, then remove the USB stick immediately to prevent an accidental re-flash on next boot.
- 
+Power off the board the moment the flash finishes, execute the reboot command bellow and as soon as the board turns off, switch the power button off immediately to prevent an accidental re-flash on next boot.
+```text
+Shell> reset
+```
+
 **Step 6 — Clear CMOS (critical, do not skip)**
 1. Remove the CR2032 CMOS battery for at least 60 seconds.
 2. Optionally tap the power button a few times with the battery out to discharge residual capacitance.
 3. Reinsert the battery.
+
 **Step 7 — BIOS configuration**
-Power on, spam **Del** to enter setup, confirm the clock has reset (proof CMOS actually cleared), then set:
+Power on, spam **Del** to enter setup (only if you already have a OS), confirm the time clock has reset (proof CMOS actually cleared), then set:
  
 | Setting | Location | Value |
 |---|---|---|
@@ -68,9 +72,9 @@ Press **F10** to save and exit.
  
 **Step 1 — Create the installer**
 1. Download the latest CachyOS ISO (**KDE Plasma** edition) from [cachyos.org](https://cachyos.org/).
-2. Write it to the USB stick:
+2. On Windows, use Rufus to create a bootable drive in the USB Stick using the recently downloaded `.iso`. On Linux, use the following command and modify `[FILE_NAME_HERE]` acornding to the recently donwloaded `.iso`:
 ```bash
-sudo dd if=cachyos.iso of=/dev/sdX status=progress conv=sync && sync
+sudo dd if=[FILE_NAME_HERE].iso of=/dev/sdX status=progress conv=sync && sync
 ```
  
 **Step 2 — Install**
