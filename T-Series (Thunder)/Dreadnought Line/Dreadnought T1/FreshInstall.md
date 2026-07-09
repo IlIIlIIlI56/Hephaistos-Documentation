@@ -19,7 +19,7 @@ This guide documents the full bring-up process for the **Dreadnought T1**, it co
 **STEP 1 — Download the files**<br>
 If using a USB stick with 32GB+, you will likely need to use `rufus`, download the latest version from  [rufus.ie](https://rufus.ie/) to be able to format it to FAT32.
 - Method A (Recommended):
-	1. Preconfigured `4U12G BIOS Update.zip` flashing tool (EFI kit), from [kenavru's GitHub](https://github.com/kenavru/BC-250) repository, alredy set to use the `BC250_3.00_CHIPSETMENU.ROM` modded BIOS from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Download it as [BC-250 Dreadnought BIOS Flash.rar](https://raw.githubusercontent.com/IlIIlIIlI56/Hephaistos-Documentation/main/T-Series%20(Thunder)/Dreadnought%20Line/Dreadnought%20T1/BC-250%20Dreadnought%20BIOS%20Flash.rar).
+	1. Preconfigured `4U12G BIOS Update.zip` flashing tool (EFI kit), from [kenavru's GitHub](https://github.com/kenavru/BC-250) repository, alredy set to use the `BC250_3.00_CHIPSETMENU.ROM` modded BIOS from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Download it as [BC-250 Dreadnought BIOS Flash.rar](https://raw.githubusercontent.com/IlIIlIIlI56/Hephaistos-Documentation/main/T-Series%20(Thunder)/Dreadnought%20Line/Dreadnought%20T1/BC-250%20Dreadnought%20BIOS.zip).
 - Method B (Manual):
 	1. Flashing tools (EFI kit): `4U12G BIOS Update.zip`, from the [kenavru's GitHub](https://github.com/kenavru/BC-250) repository — contains `AfuEfix64.efi` and `Flash.nsh`.
 	2. Modded BIOS ROM: `BC250_3.00_CHIPSETMENU.ROM`, from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Yu can verify the SHA256 above with `sha256sum`.
