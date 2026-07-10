@@ -19,10 +19,10 @@ This guide documents the full bring-up process for the **Dreadnought T1**, it co
 **STEP 1 — Download the files**<br>
 If using a USB stick with 32GB+, you will likely need to use `rufus`, download the latest version from  [rufus.ie](https://rufus.ie/) to be able to format it to FAT32.
 - Method A (Recommended):
-	1. Preconfigured `4U12G BIOS Update.zip` flashing tool (EFI kit), from [kenavru's GitHub](https://github.com/kenavru/BC-250) repository, alredy set to use the `BC250_3.00_CHIPSETMENU.ROM` modded BIOS from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Download it as the [Dreadnought's BIOS](https://raw.githubusercontent.com/IlIIlIIlI56/Hephaistos-Documentation/main/T-Series%20(Thunder)/Dreadnought%20Line/Dreadnought%20T1/BC-250%20Dreadnought%20BIOS.zip).
+	1. Preconfigured `4U12G BIOS Update.zip` flashing tool (EFI kit), from [kenavru's GitHub](https://github.com/kenavru/BC-250) repository, already set to use the `BC250_3.00_CHIPSETMENU.ROM` modded BIOS from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Download it as the [Dreadnought's BIOS](https://raw.githubusercontent.com/IlIIlIIlI56/Hephaistos-Documentation/main/T-Series%20(Thunder)/Dreadnought%20Line/Dreadnought%20T1/BC-250%20Dreadnought%20BIOS.zip).
 - Method B (Manual):
 	1. Flashing tools (EFI kit): `4U12G BIOS Update.zip`, from the [kenavru's GitHub](https://github.com/kenavru/BC-250) repository — contains `AfuEfix64.efi` and `Flash.nsh`.
-	2. Modded BIOS ROM: `BC250_3.00_CHIPSETMENU.ROM`, from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Yu can verify the SHA256 above with `sha256sum`.
+	2. Modded BIOS ROM: `BC250_3.00_CHIPSETMENU.ROM`, from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). You can verify the SHA256 above with `sha256sum`.
 
 **STEP 2 — Prepare the USB stick**<br>
 First, format the stick to standard FAT32 (not exFAT32).
@@ -42,10 +42,10 @@ Unplug all drives/SSDs containing a OS from the board so it has nowhere to boot 
 Shell> blk0:
 Shell> Flash.nsh
 ```
-> Warning, the USB stick may not be always on `blk0:`, take a quick look ath the "Device Mapping Table", sometimes it can be identified on `fs1:`. Once the AMI Firmware Update Utility starts, **do not touch the keyboard or power off the board** — even if it appears to hang, wait at least 15 minutes before assuming failure.
+> Warning, the USB stick may not be always on `blk0:`, take a quick look at the "Device Mapping Table", sometimes it can be identified on `fs1:`. Once the AMI Firmware Update Utility starts, **do not touch the keyboard or power off the board** — even if it appears to hang, wait at least 15 minutes before assuming failure.
  
 **STEP 5 — Power down & remove USB**
-Power off the board the moment the flash finishes, execute the reboot command bellow and as soon as the board turns off, switch the power button off immediately to prevent an accidental re-flash on next boot.
+Power off the board the moment the flash finishes, execute the reboot command below and as soon as the board turns off, switch the power button off immediately to prevent an accidental re-flash on next boot.
 ```text
 Shell> reset
 ```
@@ -80,7 +80,7 @@ Press **F10** to save and exit.
  
 **STEP 1 — Create the installer**
 1. Download the latest CachyOS ISO (**KDE Plasma** edition) from [cachyos.org](https://cachyos.org/).
-2. On Windows, use Rufus to create a bootable drive in the USB Stick using the recently downloaded `.iso`. On Linux, use the following command and modify `[FILE_NAME_HERE]` acording to the recently donwloaded `.iso`'s name:
+2. On Windows, use Rufus to create a bootable drive in the USB Stick using the recently downloaded `.iso`. On Linux, use the following command and modify `[FILE_NAME_HERE]` according to the recently downloaded `.iso`'s name:
 ```bash
 sudo dd if=[FILE_NAME_HERE].iso of=/dev/sdX status=progress conv=sync && sync
 ```
