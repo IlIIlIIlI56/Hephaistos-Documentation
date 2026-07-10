@@ -39,6 +39,7 @@ Method B (Manual):<br>
 
 **STEP 3 — Boot to the EFI Shell**<br>
 Unplug all drives/SSDs containing a OS from the board so it has nowhere to boot into, the insert the USB stick and power it on, the interface should drop directly into the yellow-on-black EFI Shell.<br>
+<br>
 **STEP 4 — Execute the flash**
 ```text
 Shell> blk0:
