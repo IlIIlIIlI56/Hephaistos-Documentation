@@ -17,23 +17,25 @@ This guide documents the full bring-up process for the **Dreadnought T1**, it co
 ```
  
 **STEP 1 — Download the files**<br>
-If using a USB stick with 32GB+, you will likely need to use `rufus`, download the latest version from  [rufus.ie](https://rufus.ie/) to be able to format it to FAT32.
-- Method A (Recommended):
-	1. Preconfigured `4U12G BIOS Update.zip` flashing tool (EFI kit), from [kenavru's GitHub](https://github.com/kenavru/BC-250) repository, already set to use the `BC250_3.00_CHIPSETMENU.ROM` modded BIOS from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Download it as the [Dreadnought's BIOS](https://raw.githubusercontent.com/IlIIlIIlI56/Hephaistos-Documentation/main/T-Series%20(Thunder)/Dreadnought%20Line/Dreadnought%20T1/BC-250%20Dreadnought%20BIOS.zip).
-- Method B (Manual):
-	1. Flashing tools (EFI kit): `4U12G BIOS Update.zip`, from the [kenavru's GitHub](https://github.com/kenavru/BC-250) repository — contains `AfuEfix64.efi` and `Flash.nsh`.
-	2. Modded BIOS ROM: `BC250_3.00_CHIPSETMENU.ROM`, from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). You can verify the SHA256 above with `sha256sum`.
+If using a USB stick with 32GB+, you will likely need to use `rufus`, download the latest version from  [rufus.ie](https://rufus.ie/) to be able to format it to FAT32.<br>
+<br>
+Method A (Recommended):<br>
+	- Preconfigured `4U12G BIOS Update.zip` flashing tool (EFI kit), from [kenavru's GitHub](https://github.com/kenavru/BC-250) repository, already set to use the `BC250_3.00_CHIPSETMENU.ROM` modded BIOS from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). Download it as the [Dreadnought's BIOS](https://raw.githubusercontent.com/IlIIlIIlI56/Hephaistos-Documentation/main/T-Series%20(Thunder)/Dreadnought%20Line/Dreadnought%20T1/BC-250%20Dreadnought%20BIOS.zip).<br>
+Method B (Manual):<br>
+	- Flashing tools (EFI kit): `4U12G BIOS Update.zip`, from the [kenavru's GitHub](https://github.com/kenavru/BC-250) repository — contains `AfuEfix64.efi` and `Flash.nsh`.<br>
+	- Modded BIOS ROM: `BC250_3.00_CHIPSETMENU.ROM`, from [TuxThePenguin0's GitLab](https://gitlab.com/TuxThePenguin0/bc250-bios/). You can verify the SHA256 above with `sha256sum`.<br>
 
 **STEP 2 — Prepare the USB stick**<br>
-First, format the stick to standard FAT32 (not exFAT32).
-- Method A (Recommended):
-	1. Extract the contents of `BC-250 Dreadnought BIOS.zip` to the **root** of the stick.<br>
-    No further configuration needed, modded `.ROM` file is already correctly included.
-- Method B (Manual):
-	1. Format the stick to standard FAT32 (not exFAT32).
-	2. Extract the contents of `BIOS EFI` (from the zip) to the **root** of the stick.
-	3. Back up the stock `Robin5.00` file somewhere safe.
-	4. Copy `BC250_3.00_CHIPSETMENU.ROM` to the root of the stick and **rename it to `Robin5.00`** (no extension) — or edit `Flash.nsh` to match `BC250_3.00_CHIPSETMENU.ROM` or any other BIOS (at your own risk) instead.
+First, format the stick to standard FAT32 (not exFAT32).<br>
+<br>
+Method A (Recommended):<br>
+	- Extract the contents of `BC-250 Dreadnought BIOS.zip` to the **root** of the stick.<br>
+    - further configuration needed, modded `.ROM` file is already correctly included.<br>
+Method B (Manual):<br>
+	- Format the stick to standard FAT32 (not exFAT32).<br>
+	- Extract the contents of `BIOS EFI` (from the zip) to the **root** of the stick.<br>
+  	- Back up the stock `Robin5.00` file somewhere safe.<br>
+	- Copy `BC250_3.00_CHIPSETMENU.ROM` to the root of the stick and **rename it to<br>`Robin5.00`** (no extension) — or edit `Flash.nsh` to match the modded<br>`BC250_3.00_CHIPSETMENU.ROM` or any other BIOS (at your own risk) instead.<br>
 
 **STEP 3 — Boot to the EFI Shell**<br>
 Unplug all drives/SSDs containing a OS from the board so it has nowhere to boot into, the insert the USB stick and power it on, the interface should drop directly into the yellow-on-black EFI Shell.<br>
