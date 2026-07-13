@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Hephaistos Documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Documentação técnica dos Cyberdecks Hephaistos">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <style>
+    :root { --theme-color: #e8590c; }
+    body { background: #1a1a1a; }
+    .sidebar { background-color: #161616; border-right: 1px solid #2a2a2a; }
+    .sidebar > h1 a, .sidebar > h1 { color: #e8590c; font-weight: 700; }
+    .sidebar ul li a.active { color: #e8590c; font-weight: 600; }
+    .content { background: #1a1a1a; }
+    .markdown-section { color: #d8d8d8; max-width: 900px; }
+    .markdown-section h1, .markdown-section h2 {
+      color: #f2f2f2; border-bottom: 1px solid #333; padding-bottom: .3em;
+    }
+    .markdown-section h3 { color: #e8590c; }
+    .markdown-section a { color: #ff8a3d; }
+    .markdown-section code { color: #e8590c; background: #262626; }
+    .markdown-section pre { background: #111; border: 1px solid #2a2a2a; }
+    .markdown-section table thead { background: #262626; }
+    .markdown-section blockquote { border-left-color: #e8590c; color: #b8b8b8; }
+    .app-name-link img { border-radius: 6px; }
+    .cover-main { color: #eee; }
+    .cover-main a { background-color: #e8590c !important; border: none !important; }
+    .cover-main a:last-child { background: transparent !important; color: #e8590c !important; border: 1px solid #e8590c !important; }
+  </style>
+</head>
+<body>
+  <div id="app">Carregando Hephaistos Documentation…</div>
+  <script>
+    window.$docsify = {
+      name: 'Hephaistos Documentation',
+      repo: 'IlIIlIIlI56/Hephaistos-Documentation',
+      loadSidebar: true,
+      loadNavbar: false,
+      coverpage: true,
+      onlyCover: false,
+      subMaxLevel: 3,
+      auto2top: true,
+      relativePath: true,
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      copyCode: {
+        buttonText: 'Copiar',
+        errorText: 'Erro',
+        successText: 'Copiado!'
+      },
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Buscar na documentação...',
+        noData: 'Nada encontrado.',
+        depth: 4
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>
